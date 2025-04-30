@@ -1,0 +1,151 @@
+/**
+ * Admin Styles for the Educational Expense Calculator plugin.
+ *
+ * @since      1.0.0
+ */
+
+/* Main layout */
+.eec-admin-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.eec-admin-main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.eec-admin-settings {
+    flex: 3;
+    min-width: 500px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.eec-admin-sidebar {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 782px) {
+    .eec-admin-settings,
+    .eec-admin-sidebar {
+        flex: 100%;
+        min-width: 100%;
+    }
+}
+
+/* Admin boxes */
+.eec-admin-box {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.eec-admin-box h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Shortcode display */
+.eec-admin-shortcode {
+    background: #f5f5f5;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #0073aa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eec-admin-shortcode code {
+    flex: 1;
+    padding: 5px;
+    background: transparent;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.eec-copy-shortcode {
+    margin-left: 10px !important;
+}
+
+/* Form fields */
+.form-table th {
+    width: 200px;
+}
+
+.eec-admin-field-group {
+    margin-bottom: 15px;
+}
+
+.eec-admin-field-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.eec-admin-field-group .description {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+/* API key fields */
+.eec-api-key-field {
+    display: flex;
+    align-items: center;
+}
+
+.eec-api-key-field input {
+    flex: 1;
+}
+
+.eec-toggle-api-key {
+    margin-left: 10px !important;
+}
+
+/* Cache status */
+#eec-cache-status {
+    margin-top: 10px;
+}
+
+#eec-cache-status p {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Messages */
+.eec-admin-message {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-left: 4px solid;
+}
+
+.eec-admin-message.success {
+    background-color: #ecf7ed;
+    border-color: #46b450;
+}
+
+.eec-admin-message.warning {
+    background-color: #fff8e5;
+    border-color: #ffb900;
+}
+
+.eec-admin-message.error {
+    background-color: #fbeaea;
+    border-color: #dc3232;
+}
+
+.eec-admin-message.info {
+    background-color: #e5f5fa;
+    border-color: #00a0d2;
+}
